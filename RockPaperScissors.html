@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Game: Rock-Paper-Scissors</title>
+  <link rel="stylesheet" href="htdocs/css/RockPaperScissorsStyles.css">
+</head>
+
+<body class="console">
+  <main>
+    <section id="home">
+      <h2 id="headHome"></h2>
+      <p>Hello.</p>
+      <p>Welcome to The Game.</p>
+      <p><span>Type 'Hello' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="hello">
+      <h2 id="headHello"></h2>
+      <p>We are going to play Rock-Paper-Scissors.</p>
+      <p>Do you know how to play?</p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="know">
+      <h2 id="headKnow"></h2>
+      <p>Good.</p>
+      <p>I do not have to explain such a simple game.</p>
+      <p>Perhaps you are more intelligent than I originally determined.</p>
+      <p><span>Type 'Thank you' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="teach">
+      <h2 id="headTeach"></h2>
+      <p>How sad.</p>
+      <p>It is such a simple game.</p>
+      <p>You are less intelligent than I originally determined. Oh well.</p>
+      <p>The game is played between any number of people, typically only two. There will only be two today.<br>Each person selects their weapon, either Rock, Paper, or Scissors.<br>Rock wins against Scissors, for stone can bend and destroy metal.<br>Paper wins against Rock, for it covers stone and makes it invisible.<br>Scissors win against Paper, for they can easily cut the thin material apart.</p>
+      <p>Now you know how to play, so we can move on.</p>
+      <p><span>Type 'Thank you' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="thankYou">
+      <h2 id="headThankYou"></h2>
+      <p>You may now choose your weapon. Do you choose Rock, Paper, or Scissors?</p>
+      <p><span>Type 'Rock', 'Paper', or 'Scissors' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="rock">
+      <h2 id="headRock"></h2>
+      <p>You have chosen to wield a rock. How quaint.</p>
+      <p>Would you like to pick your opponent, or would you prefer that I choose one for you?</p>
+      <p><span>Type 'I'll choose' or 'You pick' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="paper">
+      <h2 id="headPaper"></h2>
+      <p>You have chosen to wield some paper. Pathetic.</p>
+      <p>Now then, would you like to pick your opponent, or would you prefer that I choose one for you?</p>
+      <p><span>Type 'I'll choose' or 'You pick' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="scissors">
+      <h2 id="headScissors"></h2>
+      <p>You have chosen to wield a pair of scissors. Very dangerous.</p>
+      <p>Now then, would you like to pick your opponent, or would you prefer that I choose one for you?</p>
+      <p><span>Type 'I'll choose' or 'You pick' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="nothing">
+      <h2 id="headNothing"></h2>
+      <p>Do you think that I jest? How juvenile.</p>
+      <p>You did not select a valid answer, so you will fight with nothing.</p>
+      <p>Now then, would you like to pick your opponent, or would you prefer that I choose one for you?</p>
+      <p><span>Type 'I'll choose' or 'You pick' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="userPick">
+      <h2 id="headUserPick"></h2>
+      <p>You have chosen to pick your own opponent. Very well.</p>
+      <p>I will list them for you here.</p>
+      <p>
+      <div>Vanza Thrkhavor - Fang of Manipulation: She has little experience, so you may win easily.
+        <br>Lzaenoth Hajthjng - Fang of Banality: I have heard that she uses the same weapon every time.
+        <br>Dnohoth Hajthjng - Fang of Apathy: He cares not if he wins or loses.
+        <br>Hlfasta Bthfesteuu - Fang of Selfishness: She is known to cheat.
+        <br>Kavvjng Abtherek - Fang of Subjugation: He is undefeated. You have no chance of beating him.
+        <br>Ithng Chdnoth - Fang of Tenacity: He is difficult to read. He is a thespian, of course.
+        <br>Knfe Thorftuu - Fang of Intolerance: He is skillful, but not too difficult to defeat.
+        <br>Thengstuu Dnech - Fang of Excessiveness: He does not take this too seriously. You should best him easily.
+        <br>Me, Astherek Abtherek - Fang of Unconditional Hatred: All you should know is that I am far superior to you. Leave your illusions of winning behind.
+      </div>
+      <p><span>Type your choice's first name + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="asthePick">
+      <h2 id="headAsthePick"></h2>
+      <p>You have chosen to let me pick your opponent. What a brave choice.</p>
+      <p id="oppName"></p>
+      <p>Are you ready to play?</p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="vanza">
+      <h2 id="headVanza"></h2>
+      <p>You have chosen to challenge Vanza.</p>
+      <p>She has little experience, so you may win easily.</p>
+      <p>Are you ready to play?</p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="lzaenoth">
+      <h2 id="headLzaenoth"></h2>
+      <p>You have chosen to challenge Lzaenoth.</p>
+      <p>I have heard that she uses the same weapon every time.</p>
+      <p>Are you ready to play?</p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="dnohoth">
+      <h2 id="headDnohoth"></h2>
+      <p>You have chosen to challenge Dnohoth.</p>
+      <p>He cares not if he wins or loses.</p>
+      <p>Are you ready to play?</p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="hlfasta">
+      <h2 id="headHlfasta"></h2>
+      <p>You have chosen to challenge Hlfasta.</p>
+      <p>Be wary, she is known to cheat.</p>
+      <p>Are you ready to play?</p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="kavvjng">
+      <h2 id="headKavvjng"></h2>
+      <p>You have chosen to challenge Kavvjng.</p>
+      <p>He is undefeated. You have no chance of beating him.</p>
+      <p>Are you ready to play?</p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="ithng">
+      <h2 id="headIthng"></h2>
+      <p>You have chosen to challenge Ithng.</p>
+      <p>He is difficult to read. He is a thespian, you see.</p>
+      <p>Are you ready to play?</p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="knfe">
+      <h2 id="headKnfe"></h2>
+      <p>You have chosen to challenge Knfe.</p>
+      <p>He is skillful, but not too difficult to defeat. A true Kagouti that eats only grass.</p>
+      <p>Are you ready to play?</p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="thengstuu">
+      <h2 id="headThengstuu"></h2>
+      <p>You have chosen to challenge Thengstuu.</p>
+      <p>He does not take this too seriously. Do not be prideful of a win.</p>
+      <p>Are you ready to play?</p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="astherek">
+      <h2 id="headAstherek"></h2>
+      <p>You have chosen to challenge me, Astherek.</p>
+      <p>All you should know is that I am far superior to you. Leave your illusions of winning behind.</p>
+      <p>Are you ready to play?</p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="asthe">
+      <h2 id="headAsthe"></h2>
+      <p>You must be suicidal to call me by that name.</p>
+      <p>If you wish to hasten to your death, I will indulge you.</p>
+      <p>You have lost the option of turning back.</p>
+      <p>Are you ready to play?</p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="gameResult">
+      <h2 id="headGameResult"></h2>
+      <p id="resultInfo"></p>
+      <p>Would you like to play again?</p>
+      <p><span>Type 'Play again' or 'Leave' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="gameHold">
+      <h2 id="headGameHold"></h2>
+      <p>You wish to hold?</p>
+      <p>Do you want to start over, or leave?</p>
+      <p><span>Type 'Start over' or 'Leave' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="gameEnd">
+      <h2 id="headGameEnd"></h2>
+      <p>You played well, for an amateur.</p>
+      <p>Perhaps we may meet again.</p>
+	  <p><span>Type 'Hello again' + <kbd>Enter</kbd> -- to meet again.</span></p>
+    </section>
+
+    <section id="gameEndBad">
+      <h2 id="headGameEndBad"></h2>
+      <p>I knew that you were not cut out for this.</p>
+	  <p><span>Type 'Hello again' + <kbd>Enter</kbd> -- to try again.</span></p>
+    </section>
+
+    <section id="errorHome">
+      <h2 id="headErrorHome"></h2>
+      <p>What? You will follow the directions.
+      <p>
+      <p><span>Type 'Hello' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="errorHello">
+      <h2 id="headErrorHello"></h2>
+      <p>What? You will answer me correctly.
+      <p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="errorKnow">
+      <h2 id="headErrorKnow"></h2>
+      <p>I do not deal with idiots. Be thankful for my kindness.
+      <p>
+      <p><span>Type 'Thank you' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="errorTeach">
+      <h2 id="headErrorTeach"></h2>
+      <p>You are truly an idiot. Be thankful for my generosity, for it is rare.
+      <p>
+      <p><span>Type 'Thank you' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="errorThankYou">
+      <h2 id="headErrorThankYou"></h2>
+      <p>That is not a viable weapon. You will get nothing.
+      <p>
+      <p><span>Type 'Wait, what?' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="errorWait">
+      <h2 id="headErrorWait"></h2>
+      <p>You must live with your choices.
+      <p>
+      <p><span>Type 'Wait, what?' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="errorRockPaperScissors">
+      <h2 id="headErrorRockPaperScissors"></h2>
+      <p>You must make a choice. I am not so cruel as to remove all of your agency.
+      <p>
+      <p><span>Type 'I'll choose' or 'You pick' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="errorUserPick">
+      <h2 id="headErrorUserPick"></h2>
+      <p>Either you are wretched at spelling, or you are trying to be comical.
+      <p>
+      <p>Regardless, I will give you one more chance.</p>
+      <p>This time, respond appropriately. I do not suffer fools.</p>
+      <p></p>
+      <p>Those you may challenge are:</p>
+      <p>
+      <div>Vanza Thrkhavor
+        <br>Lzaenoth Hajthjng
+        <br>Dnohoth Hajthjng
+        <br>Hlfasta Bthfesteuu
+        <br>Kavvjng Abtherek
+        <br>Ithng Chdnoth
+        <br>Knfe Thorftuu
+        <br>Thengstuu Dnech
+        <br>Me, Astherek Abtherek
+      </div>
+      <p><span>Type your choice's first name + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <section id="errorUserPick2">
+      <h2 id="headErrorUserPick2"></h2>
+      <p>You try my patience. Very well, I will choose for you.
+      <p>
+        <<p id="randOpp2">
+      </p>
+      <p>Are you ready to play?</p>
+      <p><span>Type 'Yes' or 'No' + <kbd>Enter</kbd> -- to continue.</span></p>
+    </section>
+
+    <span class="command">&raquo;<input type="text"></span>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="htdocs/javascript/RockPaperScissorsScript.js"></script>
+  </main>
+</body>
+
+</html>
